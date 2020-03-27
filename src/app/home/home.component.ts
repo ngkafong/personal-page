@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Activity } from '../shared/activity';
+import { ACTIVITIES } from '../shared/activities'
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  activities: Activity[] = ACTIVITIES;
   constructor() { }
 
   ngOnInit(): void {

@@ -13,11 +13,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { UpdatesComponent } from './updates/updates.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { ContactComponent } from './contact/contact.component';
 	MatIconModule,
 	MatMenuModule,
 	FlexLayoutModule,
+	MatCarouselModule.forRoot(),
+	MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
