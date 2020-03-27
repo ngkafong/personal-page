@@ -1,8 +1,26 @@
 <mat-toolbar color="primary">
-  <mat-toolbar-row>
-	<button mat-button>Home</button>
-	<button mat-button>About Me</button>
-	<button mat-button>Update</button>
-	<button mat-button>Contact Me</button>
-  </mat-toolbar-row>
+  	
+  	<span>Hello, It's Richard.</span>
+  	<span class='menu-spacer'></span>
+  	
+  	<div fxShow="true" fxHide.lt-sm>
+		<button mat-button>Home</button>
+		<button mat-button>About Me</button>
+		<button mat-button>Update</button>
+		<button mat-button>Contact Me</button>
+	</div>
+	
+	<div fxShow="true" fxHide.gt-xs>
+		<button mat-icon-button [matMenuTriggerFor]="menu">
+			<mat-icon>menu</mat-icon>
+		</button>
+	
+		<mat-menu #menu="matMenu">
+		  <button mat-menu-item>Home</button>
+		  <button mat-menu-item>About Me</button>
+		  <button mat-menu-item>Update</button>
+		  <button mat-menu-item>Contact Me</button>
+		</mat-menu>
+	</div>
+
 </mat-toolbar>
