@@ -4,10 +4,10 @@
   	<span class='menu-spacer'></span>
   	
   	<div fxShow="true" fxHide.lt-sm>
-		<button mat-button>Home</button>
-		<button mat-button>About Me</button>
-		<button mat-button>Update</button>
-		<button mat-button>Contact Me</button>
+		<button mat-button routerLink='/home'>Home</button>
+		<button mat-button routerLink='/about'>About Me</button>
+		<button mat-button routerLink='/updates'>Updates</button>
+		<button mat-button routerLink='/contact'>Contact Me</button>
 	</div>
 	
 	<div fxShow="true" fxHide.gt-xs>
@@ -16,10 +16,10 @@
 		</button>
 	
 		<mat-menu #menu="matMenu">
-		  <button mat-menu-item>Home</button>
-		  <button mat-menu-item>About Me</button>
-		  <button mat-menu-item>Update</button>
-		  <button mat-menu-item>Contact Me</button>
+		  <button mat-menu-item routerLink='/home'>Home</button>
+		  <button mat-menu-item routerLink='/about'>About Me</button>
+		  <button mat-menu-item routerLink='/updates'>Updates</button>
+		  <button mat-menu-item routerLink='/contact'>Contact Me</button>
 		</mat-menu>
 	</div>
 

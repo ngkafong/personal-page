@@ -13,12 +13,20 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { UpdatesComponent } from './updates/updates.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    AboutComponent,
+    UpdatesComponent,
+    ContactComponent
   ],
   imports : [
     BrowserModule,
