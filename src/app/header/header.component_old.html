@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  	
+  	<span>Welcome to Richard's Site.</span>
+  	<span class='menu-spacer'></span>
+  	
+  	<div fxShow="true" fxHide.lt-sm>
+		<button mat-button routerLink='/home'>Home</button>
+		<button mat-button routerLink='/about'>About Me</button>
+		<button mat-button routerLink='/updates'>Updates</button>
+		<button mat-button routerLink='/contact'>Contact Me</button>
+	</div>
+	
+	<div fxShow="true" fxHide.gt-xs>
+		<button mat-icon-button [matMenuTriggerFor]="menu">
+			<mat-icon>menu</mat-icon>
+		</button>
+	
+		<mat-menu #menu="matMenu">
+		  <button mat-menu-item routerLink='/home'>Home</button>
+		  <button mat-menu-item routerLink='/about'>About Me</button>
+		  <button mat-menu-item routerLink='/updates'>Updates</button>
+		  <button mat-menu-item routerLink='/contact'>Contact Me</button>
+		</mat-menu>
+	</div>
+
+</mat-toolbar>

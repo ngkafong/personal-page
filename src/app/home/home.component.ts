@@ -8,7 +8,7 @@ import { ACTIVITIES } from '../shared/activities'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  
   activities: Activity[] = ACTIVITIES;
   constructor() { }
 

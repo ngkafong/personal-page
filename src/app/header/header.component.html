@@ -11,16 +11,28 @@
 	</div>
 	
 	<div fxShow="true" fxHide.gt-xs>
-		<button mat-icon-button [matMenuTriggerFor]="menu">
+		<button mat-icon-button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
 			<mat-icon>menu</mat-icon>
 		</button>
-	
-		<mat-menu #menu="matMenu">
-		  <button mat-menu-item routerLink='/home'>Home</button>
-		  <button mat-menu-item routerLink='/about'>About Me</button>
-		  <button mat-menu-item routerLink='/updates'>Updates</button>
-		  <button mat-menu-item routerLink='/contact'>Contact Me</button>
-		</mat-menu>
 	</div>
-
 </mat-toolbar>
+		<nav class="navbar navbar-light">
+		<div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li [routerLinkActive]="['active']">
+					<a class="nav-link" [routerLink]="'/home'" (click)="isMenuCollapsed = true">Home</a>
+				</li>
+				<li [routerLinkActive]="['active']">
+					<a class="nav-link" [routerLink]="'/about'" (click)="isMenuCollapsed = true">About Me</a>
+				</li>
+				<li [routerLinkActive]="['active']">
+					<a class="nav-link" [routerLink]="'/updates'" (click)="isMenuCollapsed = true">Updates</a>
+				</li>
+				<li [routerLinkActive]="['active']">
+					<a class="nav-link" [routerLink]="'/contact'" (click)="isMenuCollapsed = true">Contact Me</a>
+				</li>
+			</ul>
+		</div>
+		</nav>
+	
+

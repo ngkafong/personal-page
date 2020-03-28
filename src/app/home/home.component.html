@@ -1,30 +1,14 @@
-<mat-divider></mat-divider>
-<mat-toolbar color = 'accent'>
-	<span>Latest Activities</span>
-</mat-toolbar>
-<mat-divider></mat-divider>
+<h2 style = "text-indent:10px">Recent Updates:</h2>
 
-	<mat-carousel
-	  timings="100ms ease-in"
-	  [autoplay]="true"
-	  interval="2000"
-	  color="warn"
-	  maxWidth="auto"
-	  proportion="60"
-	  slides="5"
-	  [loop]="true"
-	  [hideArrows]="false"
-	  [hideIndicators]="false"
-	  [useKeyboard]="true"
-	  [useMouseWheel]="false"
-	  orientation="ltr"
-	>
-	  <mat-carousel-slide
-	    #matCarouselSlide
-	    *ngFor="let slide of activities; let i = index"
-	    [image]="slide.image"
-	    overlayColor="#00000040"
-	    [hideOverlay]="false"
-	  ></mat-carousel-slide>
-	</mat-carousel>
+<ngb-carousel *ngIf="activities" interval=1500 pauseOnHover="false">
+  <ng-template ngbSlide *ngFor="let activity of activities">
+    <div class="picsum-img-wrapper" align="center">
+      <img [src]="activity.image">
+    </div>
+    <div class="carousel-caption">
+      	<h1>{{activity.title}}</h1>
+    </div>
+  </ng-template>
+ 
+</ngb-carousel>
 
