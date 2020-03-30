@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, personal-pageBed } from '@angular/core/personal-pageing';
 
 import { AboutComponent } from './about.component';
 
@@ -7,14 +7,14 @@ describe('AboutComponent', () => {
   let fixture: ComponentFixture<AboutComponent>;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
+    personal-pageBed.configurepersonal-pageingModule({
       declarations: [ AboutComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AboutComponent);
+    fixture = personal-pageBed.createComponent(AboutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

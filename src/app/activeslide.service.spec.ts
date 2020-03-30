@@ -1,4 +1,4 @@
-import { TestBed } from '@angular/core/testing';
+import { personal-pageBed } from '@angular/core/personal-pageing';
 
 import { ActiveslideService } from './activeslide.service';
 
@@ -6,8 +6,8 @@ describe('ActiveslideService', () => {
   let service: ActiveslideService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(ActiveslideService);
+    personal-pageBed.configurepersonal-pageingModule({});
+    service = personal-pageBed.inject(ActiveslideService);
   });
 
   it('should be created', () => {

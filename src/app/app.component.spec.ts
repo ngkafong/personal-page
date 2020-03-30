@@ -1,12 +1,12 @@
-import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { personal-pageBed, async } from '@angular/core/personal-pageing';
+import { Routerpersonal-pageingModule } from '@angular/router/personal-pageing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
+    personal-pageBed.configurepersonal-pageingModule({
       imports: [
-        RouterTestingModule
+        Routerpersonal-pageingModule
       ],
       declarations: [
         AppComponent
@@ -15,21 +15,21 @@ describe('AppComponent', () => {
   }));
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = personal-pageBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'test'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
+  it(`should have as title 'personal-page'`, () => {
+    const fixture = personal-pageBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('test');
+    expect(app.title).toEqual('personal-page');
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = personal-pageBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('test app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('personal-page app is running!');
   });
 });

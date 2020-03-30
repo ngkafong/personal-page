@@ -1,4 +1,4 @@
-# Test
+# personal-page
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
@@ -14,13 +14,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Running unit personal-pages
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng personal-page` to execute the unit personal-pages via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Running end-to-end personal-pages
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng e2e` to execute the end-to-end personal-pages via [Protractor](http://www.protractorpersonal-page.org/).
 
 ## Further help
 

@@ -4,7 +4,10 @@
   	<div fxLayout = 'row' fxLayout.xs = 'column'>
 
 		<div fxLayout = 'column' fxFlex = 70% style="background:whitesmoke; padding:20px; margin: 5px;">
-		    <p>{{activity.content}}</p>
+        <div class = 'dates'>
+          <p> [ Posting on: {{activity.date}} ] </p>
+        </div>
+        <p>{{activity.content}}</p>
 		</div>
 
 		<div fxLayout = 'column' fxFlex = 30% style="background:whitesmoke">
