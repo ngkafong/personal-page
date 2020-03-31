@@ -7,7 +7,9 @@
         <div class = 'dates'>
           <p> [ Posting on: {{activity.date}} ] </p>
         </div>
-        <p>{{activity.content}}</p>
+        <div class = 'contents'>
+          <div [innerHTML]="activity.content" style = "text-indent:10px" ></div>
+        </div>
 		</div>
 
 		<div fxLayout = 'column' fxFlex = 30% style="background:whitesmoke">

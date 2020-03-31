@@ -1,6 +1,6 @@
 <h2 style = "text-indent:10px">Recent Updates:</h2>
 
-<ngb-carousel [interval]="1000" (slide)="onSlide($event)" pauseOnHover="false">
+<ngb-carousel [interval]="1000" (slide)="onSlide($event)" [pauseOnHover]="false">
   <ng-template ngbSlide *ngFor="let activity of activities, index as i" [id]=i >
     <div class="picsum-img-wrapper" align="center" routerLink='/updates'>
       <img [src]="activity.image">
